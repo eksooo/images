@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: fixed;
+}
+.main {
+    background-color: transparent; 
+    min-height: 100vh; 
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:is(img, source):not(.main img) {
+    width: 500px;
+}
+.back {
+    position: absolute;
+    padding: 16px;
+    font-size: 4em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.back:hover {
+    font-size: 5em;
+    color: red;
+}
+.texts {
+    text-align: center;
+    color: white;
+
+}
